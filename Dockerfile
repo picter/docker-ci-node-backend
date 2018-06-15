@@ -1,4 +1,4 @@
-FROM node:8.9.3-alpine
+FROM node:8.10.0-alpine
 
 LABEL maintainer="Picter <developers@picter.com>"
 
