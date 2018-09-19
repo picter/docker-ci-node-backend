@@ -6,6 +6,7 @@ RUN apk add -Uuv \
   ca-certificates \
   git \
   gzip \
+  docker \
   openssh-client \
   python \
   py-pip \
