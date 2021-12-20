@@ -12,7 +12,8 @@ RUN apt-get update && apt-get install -y \
   bash \
   zip \
   jq \
-  && rm -rf /var/cache/apk/*
+  && rm -rf /var/lib/apt/lists/*
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" \
   && unzip awscliv2.zip \
-  && ./aws/install
+  && ./aws/install \
+  && rm -rf awscliv2.zip
